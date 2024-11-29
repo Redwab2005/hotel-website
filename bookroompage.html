@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Luxury Suite - Luxury Haven Hotel</title>
+    <link rel="stylesheet" href="bookroompage.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Luxury Haven</div>
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="homepage.html#rooms">Rooms</a></li>
+                <li><a href="homepage.html#amenities">Amenities</a></li>
+                <li><a href="homepage.html#testimonials">Testimonials</a></li>
+                <li><a href="homepage.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="booking-header">
+                <h1 class="booking-title">Book Luxury Suite</h1>
+                <span class="room-status available">Available</span>
+            </div>
+
+            <form class="booking-form" id="bookingForm" action="/submit-booking" method="POST">
+                <div class="form-group">
+                    <label for="check-in">Check-in Date</label>
+                    <input type="date" id="check-in" name="check-in" required>
+                </div>
+                <div class="form-group">
+                    <label for="check-out">Check-out Date</label>
+                    <input type="date" id="check-out" name="check-out" required>
+                </div>
+                <div class="form-group">
+                    <label for="guests">Number of Guests</label>
+                    <select id="guests" name="guests" required>
+                        <option value="1">1 Guest</option>
+                        <option value="2">2 Guests</option>
+                        <option value="3">3 Guests</option>
+                        <option value="4">4 Guests</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="payment-options">
+                    <label>
+                        <input type="radio" name="payment" value="cash" checked> Pay with cash at the hotel
+                    </label>
+                    <label>
+                        <input type="radio" name="payment" value="credit-card"> Pay with credit card online
+                    </label>
+                </div>
+                <div class="credit-card-details" id="creditCardDetails">
+                    <div class="form-group">
+                        <label for="card-number">Card Number</label>
+                        <input type="text" id="card-number" name="card-number" placeholder="1234 5678 9012 3456">
+                    </div>
+                    <div class="form-group">
+                        <label for="card-expiry">Expiration Date</label>
+                        <input type="text" id="card-expiry" name="card-expiry" placeholder="MM/YY">
+                    </div>
+                    <div class="form-group">
+                        <label for="card-cvv">CVV</label>
+                        <input type="text" id="card-cvv" name="card-cvv" placeholder="123">
+                    </div>
+                </div>
+                <div class="button-group">
+                    <button type="submit" class="book-btn">Confirm Booking</button>
+                    <a href="room.html" class="cancel-btn">Cancel Booking</a>
+                </div>
+            </form>
+
+            <div class="booking-summary">
+                <h3>Booking Summary</h3>
+                <p><strong>Room:</strong> Luxury Suite</p>
+                <p><strong>Price per night:</strong> $300</p>
+                <p><strong>Amenities included:</strong> Free Wi-Fi, Breakfast, Access to spa and fitness center</p>
+                <p><strong>Check-in time:</strong> 3:00 PM</p>
+                <p><strong>Check-out time:</strong> 11:00 AM</p>
+                <p><strong>Cancellation policy:</strong> Free cancellation up to 48 hours before check-in. After that, the first night's stay will be charged.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Luxury Haven Hotel. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

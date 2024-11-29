@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Haven Hotel - Your Perfect Getaway</title>
+    <link rel="stylesheet" href="homepage.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Luxury Haven</div>
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="#rooms">Rooms</a></li>
+                <li><a href="#amenities">Amenities</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="login-btn"  onclick="location.href='login.html' ">Login / Sign Up</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h1>Welcome to Luxury Haven</h1>
+            <p>Experience unparalleled comfort and elegance</p>
+            <button class="cta-btn" onclick="location.href='#rooms' ">Book Your Stay</button>
+        </section>
+
+        <section id="rooms">
+            <div class="container">
+                <h2>Our Luxurious Rooms</h2>
+                <div class="room-grid">
+                    <div class="room-card">
+                        <img src="img/living1.jpg" alt="Deluxe Room">
+                        <h3>Deluxe Room</h3>
+                        <p>Spacious room with city view</p>
+                        <button class="book-btn" onclick="location.href='roompage3.html' ">Book Now</button>
+                    </div>
+                    <div class="room-card">
+                        <img src="img/living4.jpg" alt="Suite">
+                        <h3>Luxury Suite</h3>
+                        <p>Elegant suite with separate living area</p>
+                        <button class="book-btn" onclick="location.href='roompage.html' ">Book Now</button>
+                    </div>
+                    <div class="room-card">
+                        <img src="img/living3.jpg" alt="Family Room">
+                        <h3>Family Room</h3>
+                        <p>Perfect for family stays</p>
+                        <button class="book-btn" onclick="location.href='roompage2.html' ">Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="amenities">
+            <div class="container">
+                <h2>Hotel Amenities</h2>
+                <div class="amenities-grid">
+                    <div class="amenity-item">
+                        <i class="fas fa-wifi"></i>
+                        <h3>Free Wi-Fi</h3>
+                    </div>
+                    <div class="amenity-item">
+                        <i class="fas fa-dumbbell"></i>
+                        <h3>Fitness Center</h3>
+                    </div>
+                    <div class="amenity-item">
+                        <i class="fas fa-utensils"></i>
+                        <h3>Restaurant</h3>
+                    </div>
+                    <div class="amenity-item">
+                        <i class="fas fa-swimming-pool"></i>
+                        <h3>Swimming Pool</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+
+        <section id="contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Luxury Haven Hotel. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
